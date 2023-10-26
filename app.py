@@ -33,7 +33,7 @@ def detect(img, cascade):
     coords = retangulo(img, cascade, 1.1, 10, color['blue'], "buraco")
     return img, coords
 
-cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
+cascade = cv2.CascadeClassifier('cascade.xml')
 
 video = cv2.VideoCapture(0)
 
